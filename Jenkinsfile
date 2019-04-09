@@ -7,7 +7,10 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh '''
-                      sudo pip install flask
+                     sudo yum update -y
+                     sudo yum install epel-release -y
+                     sudo yum install pyhton-pip -y
+                     sudo pip install flask
                     '''
             }
         }

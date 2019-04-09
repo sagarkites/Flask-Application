@@ -25,5 +25,5 @@ def login():
     return render_template('login.html', error=error)
 
 if __name__ == '__main__':
-  app.run('192.168.33.11', port='6060')
+  app.run('192.168.33.10', port='1000')
 
